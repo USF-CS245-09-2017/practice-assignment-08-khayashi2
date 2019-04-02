@@ -43,9 +43,9 @@ public class BST<String> {
 		print(root);
 	}
 	private void print(BSTNode node) {
-		if(node == null) {
+		if(node != null) {
 			print(node.left());
-			System.out.print(" " + node.element() +" ");
+			System.out.println(node.element());
 			print(node.right());
 		}
 	}
